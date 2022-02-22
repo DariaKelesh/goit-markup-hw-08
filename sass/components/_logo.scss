@@ -1,0 +1,23 @@
+.logo {
+    margin-right: 93px;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+  }
+
+.logo--dark-theme {
+    color: #000000;
+}
+
+.logo--light-theme {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    color: #ffffff;
+  }
+  
+  .web {
+    color: $accent-color;
+  }
+  
