@@ -1,6 +1,12 @@
 .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    @include tab {
+        padding-bottom: 60px;
+        padding-top: 60px; 
+    }
+    @include desk {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
   }
 
   .section--no-padding {
