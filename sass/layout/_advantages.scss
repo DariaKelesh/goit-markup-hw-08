@@ -1,6 +1,8 @@
   
   .advantages {
     list-style: none;
+    margin-bottom: -30px;
+
     @include tab {
         display: flex; 
         flex-wrap: wrap;
@@ -10,12 +12,12 @@
   }
   
   .advantages__item {
-      margin-left: 30px;
+      
       margin-bottom: 30px;
       max-width: 450px;
       @include tab {
           width: calc(100% / 2 - 30px);
-          
+          margin-left: 30px;
          
       }
       @include desk {
@@ -60,6 +62,7 @@
     @include tab {
         line-height: 1.17;
         max-width: 354px;
+        text-align: start;
     }
     @include desk {
         line-height: 1.16;

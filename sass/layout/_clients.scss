@@ -2,13 +2,33 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+// Разобраться с нижним марджином т задать свойства для тайтла и ширину для картинок
+
+
+.clients__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+
+    @include tab {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    @include desk {
+        flex-basis: calc(100% / 6 - 30px);
+    }
 }
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -19,9 +39,9 @@
         }
 }
 
-.clients__item + .clients__item {
-    margin-left: 30px;
-}
+// .clients__item + .clients__item {
+//     margin-left: 30px;
+// }
 
 .clients__icon {
     fill: #AFB1B8;
