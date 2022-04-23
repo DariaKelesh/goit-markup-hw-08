@@ -1,39 +1,28 @@
-  
-  .advantages {
+.advantages {
     list-style: none;
-    margin-bottom: -30px;
-
     @include tab {
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
-        margin-left: -30px;
-
+        margin: -15px;
     }
   }
   
   .advantages__item {
-      
-      margin-bottom: 30px;
-      max-width: 450px;
-      @include tab {
-          width: calc(100% / 2 - 30px);
-          margin-left: 30px;
-         
-      }
-      @include desk {
-        width: calc(100% / 4 - 30px);
-      }
-
-    //   @include desk {
-    //     width: calc((100% - 60px) / 3);
-    //         &:not(:last-child) {
-    //             margin-right: 30px;
-    //         } 
-    //   }
-
+        @media screen and (max-width: 767px) {
+            &:not(:last-child) {
+            margin-bottom: 30px;
+            }
+        }
+        @include tab {
+            margin: 15px;
+            flex-basis: calc((100% - 60px) / 2);
+        @include desk {
+            flex-basis: calc((100% - 120px) / 4);
+        }
+        }
   }
   .advantages__wrap {
-      
+
       height: 120px;
       background-color: #F5F4FA;
       border-radius: 4px;
@@ -41,32 +30,21 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 30px;
-
-      @include tab {
-        max-width: 354px;
-      }
-
-      @include desk {
-        max-width: 270px;
-      }
   }
 
   .advantages__title {
-    text-align: center;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
-
+    text-align: center;
     @include tab {
+        text-align: left;
         line-height: 1.17;
-        max-width: 354px;
-        text-align: start;
     }
     @include desk {
-        line-height: 1.16;
-        max-width: 270px;
+                line-height: 1.16;
     }
   }
 
@@ -74,11 +52,4 @@
     font-size: 14px;
     line-height: 1.71;
     color: $secondary-text-color;
-
-    @include tab {   
-        max-width: 354px;
-    }
-    @include desk {
-        max-width: 270px;
-    }
   }

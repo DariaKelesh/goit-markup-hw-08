@@ -1,18 +1,17 @@
-
 .container {
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0 auto;
-  }
-  @include tel {
-    width: 480px;
-  }
 
-  @include tab {
-    width: 768px;
-  }
+    @include tel {
+        width: 480px;
+        margin: 0 auto;
+    }
 
-  @include desk {
-    width: 1200px;
-  }
+    @include tab {
+        width: 768px;
+    }
+
+    @include desk {
+        width: 1200px;
+    }
+}

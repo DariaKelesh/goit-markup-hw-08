@@ -1,26 +1,21 @@
 .clients{
-    display: flex;
-    justify-content: center;
     list-style: none;
+    display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
-    margin-left: -30px;
+    margin: -15px;
 }
 
-// Разобраться с нижним марджином т задать свойства для тайтла и ширину для картинок
-
-
 .clients__item {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-    margin-left: 30px;
+    height: 92px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
 
     @include tab {
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc((100% - 90px ) / 3);
     }
 
     @include desk {
-        flex-basis: calc(100% / 6 - 30px);
+        flex-basis: calc((100% - 180px) / 6);
     }
 }
 .clients__link {
@@ -28,8 +23,8 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    // width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,10 +33,6 @@
             border: 1px solid $accent-color;
         }
 }
-
-// .clients__item + .clients__item {
-//     margin-left: 30px;
-// }
 
 .clients__icon {
     fill: #AFB1B8;
