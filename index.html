@@ -17,7 +17,7 @@
 
 
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container header__container">
                 <nav class="site-nav">
                     <a class="logo logo--dark-theme" href=""> <span
@@ -34,6 +34,11 @@
                                 Контакты</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="mobile-menu-btn" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
                 <ul class="contacts-nav">
                     <li class="contacts-nav__item"> <a class="contacts-nav__link
                             link"
@@ -57,7 +62,60 @@
                         </a></li>
                 </ul>
             </div>
-        </header> -->
+            <div class="mobile-modal-menu" data-menu>
+                <div class="container mobile-modal-menu__container">
+                    <button type="button" class="mobile-modal-btn"
+                        data-menu-close>
+                        <svg class="mobile-modal-icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-modal__list">
+                        <li class="mobile-modal__item"><a
+                                class="mobile-nav__link" href="">Студия</a></li>
+                        <li class="mobile-modal__item"><a
+                                class="mobile-nav__link"
+                                href="./portfolio.html">
+                                Портфолио</a></li>
+                        <li class="mobile-modal__item"><a
+                                class="mobile-nav__link"
+                                href="">
+                                Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-modal__list">
+                        <li class="contacts-mobile__item"> <a
+                                class="contacts-mobile__link"
+                                href="mailto:info@devstudio.com">
+                                <span>info@devstudio.com</span>
+                            </a></li>
+                        <li class="contacts-phone__item"> <a
+                                class="contacts-phone__link"
+                                href="tel:+380961111111">
+                                <span>+38
+                                    096
+                                    111 11 11</span>
+                            </a></li>
+                    </ul>
+                    <ul class="mobile-modal__list mobile-modal-social__list">
+                        <li class="mobile-modal-social__item"><a
+                                href="https://www.instagram.com"
+                                class="mobile-modal-social__link
+                                mobile-modal-social__link--not-last-child">Instagram</a></li>
+                        <li class="mobile-modal-social__item"><a
+                                href="https://www.twitter.com"
+                                class="mobile-modal-social__link
+                                mobile-modal-social__link--not-last-child">Twitter</a></li>
+                        <li class="mobile-modal-social__item"><a
+                                href="https://www.facebook.com"
+                                class="mobile-modal-social__link
+                                mobile-modal-social__link--not-last-child">Facebook</a></li>
+                        <li class="mobile-modal-social__item"><a
+                                href="https://www.linkedin.com"
+                                class="mobile-modal-social__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="hero">
                 <div class="container">
@@ -571,5 +629,6 @@
                 </div>
             </div> -->
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
