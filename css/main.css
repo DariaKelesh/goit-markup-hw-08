@@ -715,6 +715,12 @@ img {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1199px) {
+  .section--desktop-only {
+    display: none;
+  }
+}
+
 .team {
   list-style: none;
 }
@@ -978,13 +984,7 @@ img {
   color: #ffffff;
 }
 
-.footer__wrap {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__contact-us {
-  flex-grow: 1;
   margin-right: 70px;
 }
 
@@ -1017,12 +1017,14 @@ img {
   margin-right: 93px;
 }
 
-.join-us__title, .sign-up__title {
+.join-us__title,
+.sign-up__title {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
+  text-align: center;
 }
 
 .join-us__list {
@@ -1043,7 +1045,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-us__link:hover, .join-us__link:focus {
+.join-us__link:hover,
+.join-us__link:focus {
   background-color: #2196f3;
 }
 
@@ -1055,13 +1058,8 @@ img {
   fill: #ffffff;
 }
 
-.sign-up__form {
-  display: flex;
-  align-items: baseline;
-}
-
 .sign-up__btn {
-  display: inline-flex;
+  display: block;
   align-items: center;
   margin-left: 12px;
   width: 200px;
