@@ -20,10 +20,9 @@
         padding-bottom: 16px;
     }
 
-
 }
 
-@media screen and(min-width: 768px) {
+@include tab {
     .mobile-menu-btn {
         display: none;
     }
@@ -45,7 +44,7 @@
     }
 }
 
-@media screen and(min-width: 1200px) {
+@include desk {
     .header {
         padding-top: 24px;
         padding-bottom: 25px;

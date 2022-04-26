@@ -16,8 +16,8 @@
 .footer__contact-us {
 
     // flex-grow: 1;
-    margin-right: 70px;
-
+    // margin-right: 70px;
+    text-align: center;
 
 }
 
@@ -25,30 +25,39 @@
     font-style: normal;
 }
 
+
+.contacts {
+    display: block;
+    list-style: none;
+}
+
+.contacts__link {
+    // display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+}
+
 .address__link {
     color: #ffffff;
 }
 
-.contacts-nav--light-theme {
-    display: block;
-    margin: 0;
-}
-
-.contacts-nav__link--light-theme {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts-nav__item--light-theme {
-
+.contacts__item {
     margin-bottom: 9px;
-
-    &+& {
-        margin-left: 0;
-    }
 }
 
 .join-us {
-    margin-right: 93px;
+    // margin-right: 93px;
 }
 
 .join-us__title,
@@ -100,13 +109,13 @@
 
 
 .sign-up__form {
+    text-align: center;
     // display: flex;
     // align-items: baseline;
 }
 
 .sign-up__btn {
-    // display: inline-flex;
-    display: block;
+    display: inline-flex;
     align-items: center;
     margin-left: 12px;
     width: 200px;
@@ -120,6 +129,8 @@
 }
 
 .sign-up__input {
+    display: block;
+    margin: 0 auto;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
