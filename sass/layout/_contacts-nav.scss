@@ -1,33 +1,45 @@
-.contacts-nav {
-    display: none;
+@include tab {
+
+    .contacts-nav {
+        margin-left: auto;
+        list-style: none;
+    }
+
+    .contacts-nav__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $secondary-text-color;
+        font-weight: 500;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    .contacts-nav__icon {
+        margin-right: 8px;
+        fill: currentColor;
+    }
 }
 
-// .contacts-nav {
-//     display: flex;
-//     margin-left: auto;
-//     list-style: none;
-//   }
 
-//   .contacts-nav__link {
-//     display: flex;
-//     align-items: center;
-//     text-decoration: none;
-//     color: $secondary-text-color;
-//     font-weight: 500;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         &:hover,
-//         &:focus {
-//             color: $accent-color;
-//         }
-//   }
+@include desk {
 
-//   .contacts-nav__item + .contacts-nav__item {
-//     margin-left: 50px;
-//   }
+    .contacts-nav {
+        display: flex;
+    }
 
-//   .contacts-nav__icon {
-//       margin-right: 10px;
-//       fill: currentColor;
-//   }
+    .contacts-nav__item+.contacts-nav__item {
+        margin-left: 50px;
+    }
+
+    .contacts-nav__icon {
+        margin-right: 10px;
+    }
+
+}
