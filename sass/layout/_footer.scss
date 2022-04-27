@@ -2,22 +2,45 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
-
     background-color: $background-section-color;
     color: #ffffff;
 }
 
 .footer__wrap {
-    // display: flex;
-    // align-items: baseline;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-right: 89px;
+        padding-left: 76px;
+    }
+
+    @include desk {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
-.footer__contact-us {
+.footer__thumb {
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+    }
 
-    // flex-grow: 1;
-    // margin-right: 70px;
+    @include desk {
+        display: inline-flex;
+        align-items: baseline;
+    }
+}
+
+.contact-us {
     text-align: center;
+    margin-bottom: 60px;
+
+    @include desk {
+        margin-bottom: 0;
+        text-align: left;
+        flex-grow: 1;
+        margin-right: 70px;
+    }
 
 }
 
@@ -32,7 +55,6 @@
 }
 
 .contacts__link {
-    // display: flex;
     align-items: center;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -46,18 +68,30 @@
         color: $accent-color;
     }
 
+    @include desk {
+        display: flex;
+    }
 }
 
 .address__link {
     color: #ffffff;
 }
 
-.contacts__item {
-    margin-bottom: 9px;
+.contacts__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include desk {
+        margin-bottom: 9px;
+    }
 }
 
 .join-us {
-    // margin-right: 93px;
+    margin-bottom: 60px;
+
+    @include desk {
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
 }
 
 .join-us__title,
@@ -69,6 +103,10 @@
     font-size: 14px;
     font-weight: 700;
     text-align: center;
+
+    @include desk {
+        text-align: left;
+    }
 }
 
 .join-us__list {
@@ -105,22 +143,26 @@
 }
 
 
-
-
-
 .sign-up__form {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
+
+    @include desk {
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .sign-up__btn {
     display: inline-flex;
     align-items: center;
-    margin-left: 12px;
     width: 200px;
     padding-right: 28px;
     padding-left: 28px;
+
+    @include desk {
+        margin-left: 12px;
+    }
 }
 
 .sign-up__icon {
@@ -131,7 +173,8 @@
 .sign-up__input {
     display: block;
     margin: 0 auto;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -140,4 +183,8 @@
     padding: 15px;
     color: #ffffff;
     outline: none;
+
+    @include desk {
+        width: 358px;
+    }
 }

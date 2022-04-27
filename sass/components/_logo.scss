@@ -2,9 +2,13 @@
     margin-right: 93px;
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
-  }
+
+    @include desk {
+        font-size: 26px;
+    }
+}
 
 .logo--dark-theme {
     color: #000000;
@@ -15,9 +19,8 @@
     margin-bottom: 20px;
     margin-right: 0;
     color: #ffffff;
-  }
-  
-  .web {
+}
+
+.web {
     color: $accent-color;
-  }
-  
+}
