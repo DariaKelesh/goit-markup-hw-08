@@ -948,6 +948,13 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 30px) / 1);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects__item {
     margin: 15px;
@@ -958,12 +965,6 @@ img {
 @media screen and (min-width: 1200px) {
   .projects__item {
     flex-basis: calc((100% - 90px) / 3);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .projects__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
