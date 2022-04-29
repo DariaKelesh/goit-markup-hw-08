@@ -1,14 +1,15 @@
 .filter__list {
     list-style: none;
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 35px;
-    }
+    margin-bottom: 40px;
 
     @include tab {
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
+    }
+
+    @include desk {
+        margin-bottom: 35px;
     }
 }
 
@@ -17,18 +18,17 @@
 
 }
 
-.filter__item {
-    @media screen and (max-width: 767px) {
-        display: inline-block;
-        margin-bottom: 15px;
-    }
+.filter__wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
 
-    &:nth-child(4) {
-        @media screen and (max-width: 767px) {
-            margin-left: 0;
-        }
-    }
+.filter__wrap+.filter__wrap {
+    margin-left: 0;
 
+    @include tab {
+        margin-left: 8px;
+    }
 }
 
 .filter__button {

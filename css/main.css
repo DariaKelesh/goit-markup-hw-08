@@ -914,19 +914,20 @@ img {
 
 .filter__list {
   list-style: none;
-}
-
-@media screen and (max-width: 767px) {
-  .filter__list {
-    margin-bottom: 35px;
-  }
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .filter__list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 35px;
   }
 }
 
@@ -934,16 +935,18 @@ img {
   margin-left: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .filter__item {
-    display: inline-block;
-    margin-bottom: 15px;
-  }
+.filter__wrap {
+  display: flex;
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 767px) {
-  .filter__item:nth-child(4) {
-    margin-left: 0;
+.filter__wrap + .filter__wrap {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__wrap + .filter__wrap {
+    margin-left: 8px;
   }
 }
 
