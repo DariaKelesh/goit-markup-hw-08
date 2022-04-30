@@ -40,21 +40,21 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('../images/hero-bg-img/480/hero-bg-img-480@x2.jpg');
+                url(../../images/hero-bg-img/480/hero-bg-img-480@x2.jpg);
         }
 
         @include tab {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('../images/hero-bg-img/768/hero-bg-img-768@x2.jpg');
+                url(../../images/hero-bg-img/768/hero-bg-img-768@x2.jpg);
         }
 
         @include desk {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('../images/hero-bg-img/1200/hero-bg-img-1200@x2.jpg');
+                url(../../images/hero-bg-img/1200/hero-bg-img-1200@x2.jpg);
         }
     }
 }
