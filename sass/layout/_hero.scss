@@ -15,6 +15,11 @@
     text-align: center;
 
     @include tab {
+        background-color: rgba(47, 48, 58, 0.4);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -24,6 +29,11 @@
     @include desk {
         padding-top: 200px;
         padding-bottom: 200px;
+        background-color: rgba(47, 48, 58, 0.4);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -37,6 +47,11 @@
 (min-resolution: 2dppx) {
     .hero {
         @media screen and (max-width: 767px) {
+            background-color: rgba(47, 48, 58, 0.4);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
@@ -44,6 +59,11 @@
         }
 
         @include tab {
+            background-color: rgba(47, 48, 58, 0.4);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
@@ -51,6 +71,11 @@
         }
 
         @include desk {
+            background-color: rgba(47, 48, 58, 0.4);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
