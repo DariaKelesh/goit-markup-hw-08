@@ -50,10 +50,6 @@
 .projects {
     list-style: none;
 
-    @media screen and(max-width: 767px) {
-        text-align: center;
-    }
-
     @include tab {
         display: flex;
         flex-wrap: wrap;

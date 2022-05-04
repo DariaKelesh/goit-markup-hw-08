@@ -1018,12 +1018,6 @@ img {
   list-style: none;
 }
 
-@media screen and (max-width: 767px) {
-  .projects {
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .projects {
     display: flex;
