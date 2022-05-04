@@ -1,5 +1,4 @@
-.filter__list {
-    list-style: none;
+.filter__wrap {
     margin-bottom: 40px;
 
     @include tab {
@@ -18,12 +17,13 @@
 
 }
 
-.filter__wrap {
+.filter__list {
     display: flex;
     margin-bottom: 15px;
+    list-style: none;
 }
 
-.filter__wrap+.filter__wrap {
+.filter__list+.filter__list {
     margin-left: 0;
 
     @include tab {

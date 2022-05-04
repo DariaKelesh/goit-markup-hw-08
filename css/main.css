@@ -962,13 +962,12 @@ img {
   fill: #2196f3;
 }
 
-.filter__list {
-  list-style: none;
+.filter__wrap {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter__list {
+  .filter__wrap {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
@@ -976,7 +975,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .filter__list {
+  .filter__wrap {
     margin-bottom: 35px;
   }
 }
@@ -985,17 +984,18 @@ img {
   margin-left: 8px;
 }
 
-.filter__wrap {
+.filter__list {
   display: flex;
   margin-bottom: 15px;
+  list-style: none;
 }
 
-.filter__wrap + .filter__wrap {
+.filter__list + .filter__list {
   margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .filter__wrap + .filter__wrap {
+  .filter__list + .filter__list {
     margin-left: 8px;
   }
 }
